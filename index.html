@@ -9,18 +9,18 @@
     <div class="container">
         <h1>Search for Parks!</h1>
         <form id="parks">
-            <label for="parks-search">Enter one or more state abbreviations, separated by commas:</label>
+            <label>Enter one or more state abbreviations, separated by commas:</label>
             <input type="text" name="park-search" id="js-park-search" required>
 
-            <label for="max-results">Maximum results to return:</label>
-            <input type="number" name="max-results" id="js-max-results" max="10">
+            <label>Maximum results to return:</label>
+            <input type="number" name="max-results" id="js-max-results" value="10">
 
             <button type="submit">Find!</button>
         </form>
 
         <p class="js-error"></p>
 
-        <section class="results-hidden" role="region">
+        <section class="results-hidden">
             <h2>Search Results</h2>
             <ul class="results-list">
             </ul>
