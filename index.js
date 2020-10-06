@@ -19,7 +19,7 @@ function displayResults(responseJson, maxResults) {
     }
     $('.results').removeClass('hidden')
 }
-function getParks(parkSearch, maxResults, apiKey, searchURL) {
+function getParks(parkSearch, maxResults=10, apiKey, searchURL) {
     const params = {
         stateCode: parkSearch,
         limit: maxResults
